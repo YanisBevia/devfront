@@ -1,0 +1,36 @@
+.body{
+    background-color: #0077FE;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.inscription-title{
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 50px;
+}
+
+.input-section{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+}
+
+input{
+    border-radius: 2em;
+    margin-bottom: 20px;
+}
+.btn{
+    align-self: center;
+    background-color: #fff;
+    border-radius: 2em;
+    margin-top: 50px;
+    color: #0077FE;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+html{
+    background-color: #0077FE;
+}
