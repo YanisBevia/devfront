@@ -7,8 +7,8 @@ import { FiltersComponent } from './components/filters/filters.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeroComponent } from './components/hero/hero.component';
-import { SkillsListComponent } from './components/skills-list/skills-list.component';
-import { SkillsComponent } from './components/skills/skills.component';
+import { SkillListComponent } from './components/skill-list/skill-list.component';
+import { SkillComponent } from './components/skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +17,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     HeaderComponent,
     FooterComponent,
     HeroComponent,
-    SkillsListComponent,
-    SkillsComponent
+    SkillListComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,

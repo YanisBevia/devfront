@@ -3,11 +3,11 @@ import { Skill } from 'src/app/models/skill.model';
 import { SkillsService } from 'src/app/services/skills.service';
 
 @Component({
-  selector: 'app-skills-category',
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  selector: 'app-skill',
+  templateUrl: './skill.component.html',
+  styleUrls: ['./skill.component.scss']
 })
-export class SkillsComponent implements OnInit {
+export class SkillComponent implements OnInit {
   @Input() skill!: Skill;
 
 
