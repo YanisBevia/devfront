@@ -1,4 +1,4 @@
-export class Skills {
+export class Skill {
     id!: number;
     category!: string;
     items!: [string, string, string];

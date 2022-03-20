@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Skill } from 'src/app/models/skill.model';
+import { SkillsService } from 'src/app/services/skills.service';
 
 @Component({
   selector: 'app-skills-category',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
+  @Input() skill!: Skill;
 
-  constructor() { }
+
+  constructor(private skillService: SkillsService) { }
 
   ngOnInit(): void {
   }

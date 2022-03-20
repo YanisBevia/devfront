@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Skills } from '../models/skills.model';
+import { Skill } from '../models/skill.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SkillsService {
 
-  skills: Skills[] = [
+  skills: Skill[] = [
     {
       id: 1,
       category: 'Informatique',
@@ -39,11 +39,11 @@ export class SkillsService {
     },
   ];
 
-  getAllSkills(): Skills[] {
+  getAllSkills(): Skill[] {
     return this.skills;
   }
 
-  getSkillById(skillId: number): Skills {
+  getSkillById(skillId: number): Skill {
     const skill = this.skills.find(skill => skill.id === skillId);
 
     if (!skill) {
