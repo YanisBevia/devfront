@@ -1,6 +1,6 @@
 export class Skills {
     id!: number;
     category!: string;
-    items!: [];
+    items!: [string, string, string];
     imagePath!: string;
 }
