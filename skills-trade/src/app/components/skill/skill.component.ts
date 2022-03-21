@@ -16,4 +16,8 @@ export class SkillComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onViewPost(): void {
+    console.log(this.skillService.getSkillById(this.skill.id));
+  }
+
 }

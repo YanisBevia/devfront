@@ -1,4 +1,4 @@
-<div class="skills-category-card">
+<div class="skills-category-card" (click)="onViewPost()">
     <img class="skills-category-image" [src]="skill.imagePath" [alt]="skill.category">
     <div class="skills-category-image-overlay">
         <div class="skills-category-title">{{ skill.category }}</div>
