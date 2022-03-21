@@ -9,33 +9,33 @@ export class SkillsService {
   skills: Skill[] = [
     {
       id: 1,
-      category: 'Informatique',
+      category: 'Graphisme/Design',
       items: ["Développeur Web", "Développeur Mobile", "DevOps"],
-      imagePath: "assets/image-test.jpg",
+      imagePath: "assets/design.jpg",
     },
     {
       id: 2,
-      category: 'Crea & Design',
+      category: 'Marketing',
       items: ["Skill 1", "Skill 2", "Skill 3"],
-      imagePath: "assets/image-test.jpg",
+      imagePath: "assets/marketing.jpg",
     },
     {
       id: 3,
-      category: 'Communication',
+      category: 'Musique/Audio',
       items: ["Skill 1", "Skill 2", "Skill 3"],
-      imagePath: "assets/image-test.jpg",
+      imagePath: "assets/audio.jpg",
     },
     {
       id: 4,
-      category: 'Marketing',
+      category: 'Programmation/Tech',
       items: ["Skill 1", "Skill 2", "Skill 3"],
-      imagePath: "assets/image-test.jpg",
+      imagePath: "assets/tech.jpg",
     },
     {
       id: 5,
-      category: 'Menager',
+      category: 'Bricolage',
       items: ["Skill 1", "Skill 2", "Skill 3"],
-      imagePath: "assets/image-test.jpg",
+      imagePath: "assets/diy.jpg",
     },
   ];
 
