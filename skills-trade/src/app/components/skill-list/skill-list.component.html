@@ -1,35 +1,6 @@
 <div class="container-fluid mt-5">
     <h2 class="title-category">Catégories:</h2>
-    <div class="d-flex justify-content-evenly">
-        <div class="skills-category-card">
-            <img class="skills-category-image" src="assets/image-test.jpg" alt="Image Test 1">
-            <div class="skills-category-image-overlay">
-                <div class="skills-category-title">Developpement Mobile</div>
-            </div>
-        </div>
-        <div class="skills-category-card">
-            <img class="skills-category-image" src="assets/image-test.jpg" alt="Image Test 2">
-            <div class="skills-category-image-overlay">
-                <div class="skills-category-title">Developpement Web</div>
-            </div>
-        </div>
-        <div class="skills-category-card">
-            <img class="skills-category-image" src="assets/image-test.jpg" alt="Image Test 3">
-            <div class="skills-category-image-overlay">
-                <div class="skills-category-title">Crea & Design</div>
-            </div>
-        </div>
-        <div class="skills-category-card">
-            <img class="skills-category-image" src="assets/image-test.jpg" alt="Image Test 4">
-            <div class="skills-category-image-overlay">
-                <div class="skills-category-title">Marketing</div>
-            </div>
-        </div>
-        <div class="skills-category-card">
-            <img class="skills-category-image" src="assets/image-test.jpg" alt="Image Test 5">
-            <div class="skills-category-image-overlay">
-                <div class="skills-category-title">Communication</div>
-            </div>
-        </div>
+    <div class="d-flex justify-content-around">
+        <app-skill *ngFor="let skill of skills" [skill]="skill"></app-skill>
     </div>
 </div>
