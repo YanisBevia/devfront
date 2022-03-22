@@ -9,7 +9,7 @@
                             <td>{{skill.nom}}</td>
                             <td>{{skill.prix}}</td>
                             <td>{{skill.date | date:'dd/MM/yyyy'}}</td>
-                            <td>{{skill.categorie.nom}}</td>
+                            <td>{{skill.categorie.name}}</td>
                             <td><a class="btn btn-danger" (click)="supprimerSkill(skill)">Supprimer</a></td> 
                             <td><a class="btn btn-success" [routerLink]="['/updateProduit',skill.id]">Modifier</a></td>
   

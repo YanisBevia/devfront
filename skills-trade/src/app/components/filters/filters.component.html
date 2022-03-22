@@ -9,7 +9,7 @@
                     (change)="onChange()"> 
                         <option value="no-select" selected>-- Sélectionner --</option>       
                         <option *ngFor="let cat of categories" value="{{cat.id}}">   
-                                {{cat.nom}}
+                                {{cat.name}}
                         </option>
                     </select>   
                 </div>
@@ -23,7 +23,7 @@
             <div class="col-12 col-md-6 col-lg-4" *ngFor="let skill of skills">
                 <div class="trade">
                     <h3>{{skill.nom}}</h3>
-                    <h4>{{skill.categorie.nom}}</h4>
+                    <h4>{{skill.categorie.name}}</h4>
                     <div class="img-trade">
                         <img src="{{skill.image}}" />
                     </div>

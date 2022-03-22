@@ -17,16 +17,16 @@ export class SkillService {
 
   constructor() { 
     this.categories = [ 
-      {id : 1, nom : "Graphisme"},
-      {id : 2, nom : "Musique"}
+      {id : 1, name : "Graphisme", imagePath : "assets/design.jpg"},
+      {id : 2, name : "Musique", imagePath : "assets/marketing.jpg"}
       ]; 
 
     this.skills = [
-      { id : 1,  nom : "Cours Adobe Photoshop", prix : 20, date : new Date("01/14/2011"), categorie : {id : 1, nom : "Graphisme"}, 
+      { id : 1,  nom : "Cours Adobe Photoshop", prix : 20, date : new Date("01/14/2011"), categorie : {id : 1, name : "Graphisme", imagePath : "assets/design.jpg"}, 
       image: 
       "https://pic.clubic.com/v1/images/1901235/raw"
       },
-      { id : 2,  nom : "Cours de guitare", prix : 30, date : new Date("12/17/2010"), categorie : {id : 2, nom : "Musique"}, image:
+      { id : 2,  nom : "Cours de guitare", prix : 30, date : new Date("12/17/2010"), categorie : {id : 2, name : "Musique", imagePath : "assets/marketing.jpg"}, image:
       "https://www.cultura.com/cdn-cgi/image/width=2000/content/dam/cultura-one/2021/instruments-de-musique/UNI_HEAD_guitare.jpg"
       },
     ];
