@@ -1,6 +1,10 @@
+import { Categorie } from './categorie.model';
+
 export class Skill {
-    id!: number;
-    category!: string;
-    items!: [string, string, string];
-    imagePath!: string;
+    id !: number;
+    nom !: string;
+    prix !: number;
+    date !: Date;
+    categorie !: Categorie;
+    image !: string;
 }

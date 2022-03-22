@@ -1,26 +1,51 @@
-<div class="container">
-    <div class="filters">
-        <select name="category" id="category" class="filter">
-            <option value="1">
-                Graphisme / design
-            </option>
-            <option value="2">
-                Marketing
-            </option>
-            <option value="3">
-                Musique / Audio
-            </option>
-            <option value="4">
-                Programmation
-            </option>
-            <option value="5">
-                Sport
-            </option>
-        </select>
-        <form>
-            <input type="text" placeholder="Saisissez le nom de l'offre">
-            <input type="submit" value="Rechercher">
-        </form>
+<div class="container-filters">
+    <div class="container">
+        <div class="filters">
+            <p>Vous pouvez recherchez ici les offres d'échanges de skills en fonction de la catégorie.</p>
+            <div class="filter">
+                <label>Catégorie </label>
+                <div class="select-wrapper">
+                    <select class="form-control form-control-lg" id="idCat" name="idCat" [(ngModel)]="IdCategorie" 
+                    (change)="onChange()"> 
+                        <option value="no-select" selected>-- Sélectionner --</option>       
+                        <option *ngFor="let cat of categories" value="{{cat.id}}">   
+                                {{cat.name}}
+                        </option>
+                    </select>   
+                </div>
+            </div>                  
+        </div>
     </div>
-    
+</div>
+<div class="container-trades">
+    <div class="container">
+        <div class="trades row">                   
+            <div class="col-12 col-md-6 col-lg-4" *ngFor="let skill of skills">
+                <div class="trade">
+                    <h3>{{skill.nom}}</h3>
+                    <h4>{{skill.categorie.name}}</h4>
+                    <div class="img-trade">
+                        <img src="{{skill.image}}" />
+                    </div>
+                    <p class="date">{{skill.date}}</p>
+                    <p class="price">{{skill.prix}} €</p>
+            <!-- <table class="table table-striped">
+                <tr> <th>Id</th><th>Nom</th> <th>Prix</th>  <th>Date Création</th><th>Catégorie</th> </tr>
+                    <tbody *ngFor="let skill of skills">
+                            <tr >
+                                <td>{{skill.id}}</td>
+                                <td>{{skill.nom}}</td>
+                                <td>{{skill.prix}}</td>
+                                <td>{{skill.date| date:'dd/MM/yyyy'}}</td>
+                                <td>{{skill.categorie.nom}}</td>
+                                <td><a class="btn btn-danger" (click)="supprimerSkill(skill)">Supprimer</a></td>
+                                <td><a class="btn btn-success" [routerLink]="['/updateProduit',skill.id]">Modifier</a></td>
+        
+                                </tr>                                    
+                    </tbody>
+            </table> -->
+                </div>
+            </div>
+        </div>
+    </div> 
 </div>
