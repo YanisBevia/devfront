@@ -1,0 +1,22 @@
+<div class="body">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4">
+                <div class="inscription-title">Se connecter</div>
+                <form>
+                    <div class="input-section form-group">
+                        <div>
+                            <label for="mail">Mail :</label>
+                            <input type="email" id="mail" class="form-control" placeholder="exemple@gmail.com" required [(ngModel)]="user.mail">
+                        </div>
+                        <div>
+                            <label for="password">Mot de passe :</label>
+                            <input type="password" id="password" class="form-control" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required [(ngModel)]="user.password">
+                        </div>
+                        <button type="submit" class="btn" (click)="connect()">Se connecter</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

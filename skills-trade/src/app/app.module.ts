@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { InscriptionComponent } from './inscription/inscription.component';
+import { ConnexionComponent } from './connexion/connexion.component';
+import { FormsModule } from '@angular/forms';
 import { FiltersComponent } from './components/filters/filters.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -14,6 +17,8 @@ import { VideoComponent } from './components/video/video.component';
 @NgModule({
   declarations: [
     AppComponent,
+    InscriptionComponent,
+    ConnexionComponent
     FiltersComponent,
     HeaderComponent,
     FooterComponent,
@@ -24,7 +29,8 @@ import { VideoComponent } from './components/video/video.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
