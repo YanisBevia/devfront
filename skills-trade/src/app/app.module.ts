@@ -8,7 +8,6 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { FormsModule } from '@angular/forms';
 import { FiltersComponent } from './components/filters/filters.component';
 import { SkillsComponent } from './components/skills/skills.component';
-import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeroComponent } from './components/hero/hero.component';
@@ -20,7 +19,7 @@ import { VideoComponent } from './components/video/video.component';
   declarations: [
     AppComponent,
     FiltersComponent,
-    SkillsComponent
+    SkillsComponent,
     InscriptionComponent,
     ConnexionComponent
     FiltersComponent,
