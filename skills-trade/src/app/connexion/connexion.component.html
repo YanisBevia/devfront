@@ -5,10 +5,14 @@
                 <div class="inscription-title">Se connecter</div>
                 <form>
                     <div class="input-section form-group">
-                        <label for="mail">Mail :</label>
-                        <input type="email" id="mail" class="form-control" required [(ngModel)]="user.mail">
-                        <label for="password">Mot de passe :</label>
-                        <input type="password" id="password" class="form-control" required [(ngModel)]="user.password">
+                        <div>
+                            <label for="mail">Mail :</label>
+                            <input type="email" id="mail" class="form-control" placeholder="exemple@gmail.com" required [(ngModel)]="user.mail">
+                        </div>
+                        <div>
+                            <label for="password">Mot de passe :</label>
+                            <input type="password" id="password" class="form-control" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required [(ngModel)]="user.password">
+                        </div>
                         <button type="submit" class="btn" (click)="connect()">Se connecter</button>
                     </div>
                 </form>

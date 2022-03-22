@@ -7,19 +7,22 @@
 
 .inscription-title{
     text-align: center;
-    margin-top: 180px;
+    font-size: 50px;
+    margin-top: 150px;
     margin-bottom: 50px;
 }
 
 .input-section{
     display: flex;
     flex-direction: column;
-    // align-items: center;
+    align-items: center;
 }
 
-input{
+.form-control{
     border-radius: 2em;
     margin-bottom: 20px;
+    width: 400px;
+    height: 50px;
 }
 .btn{
     align-self: center;
@@ -27,10 +30,11 @@ input{
     border-radius: 2em;
     margin-top: 50px;
     color: #0077FE;
-    padding-left: 2em;
-    padding-right: 2em;
+    width: 250px;
+    height: 50px;
 }
 
-html{
-    background-color: #0077FE;
-}
+::placeholder {
+    opacity: 0.5;
+  }
+  
