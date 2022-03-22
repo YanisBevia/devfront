@@ -1,0 +1,6 @@
+<div class="container-fluid mt-5">
+    <h2 class="title-category">Catégories:</h2>
+    <div class="row justify-content-around list-categories">
+        <app-category *ngFor="let category of categories" [category]="category" ngClass="col-12 col-md-4 col-lg-3"></app-category>
+    </div>
+</div>
