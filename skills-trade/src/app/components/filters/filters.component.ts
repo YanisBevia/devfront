@@ -6,7 +6,7 @@ import { SkillService } from '../../services/skill.service';
 @Component({
   selector: 'app-filters',
   templateUrl: './filters.component.html',
-  styleUrls: ['./filters.component.scss']
+  styleUrls: ['./filters.component.scss'],
 })
 export class FiltersComponent implements OnInit {
 
@@ -18,6 +18,7 @@ export class FiltersComponent implements OnInit {
   constructor(private skillService: SkillService ) {
     this.skills = skillService.listeSkills();
     }
+    
  
    ngOnInit(): void {
      this.categories = this.skillService.listeCategories();
@@ -26,5 +27,4 @@ export class FiltersComponent implements OnInit {
    onChange() {
      this.skills =  this.skillService.rechercherParCategorie(this.IdCategorie);
     }
-
 }
