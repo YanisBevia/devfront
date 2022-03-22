@@ -22,7 +22,6 @@ import { VideoComponent } from './components/video/video.component';
     SkillsComponent,
     InscriptionComponent,
     ConnexionComponent,
-    FiltersComponent,
     HeaderComponent,
     FooterComponent,
     HeroComponent,
